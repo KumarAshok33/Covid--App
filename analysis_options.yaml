@@ -1,0 +1,19 @@
+include: package:pedantic/analysis_options.yaml
+
+linter:
+  rules:
+    camel_case_types: true
+    prefer_single_quotes: false
+    omit_local_variable_types: false
+    unnecessary_this: false
+    prefer_collection_literals: false
+
+analyzer:
+  exclude:
+    # Generated file
+    - "generated_plugin_registrant.dart"
+
+  errors:
+    missing_required_param: error
+  strong-mode:
+    implicit-casts: false
